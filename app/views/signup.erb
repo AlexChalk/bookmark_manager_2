@@ -1,3 +1,8 @@
-<h1>Welcome, <%= @user_email %>!</h1>
-
-
+<h1>Welcome, please sign up below.</h1>
+<form action="/create-user" method="post">
+  Email address:
+  <input type="text" name="email"><br>
+  Password:
+  <input type="text" name="password"><br>
+  <input type="submit" value="Sign Up">
+</form>
