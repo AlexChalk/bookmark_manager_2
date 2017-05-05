@@ -4,7 +4,11 @@ require_relative "data_mapper_setup"
 
   class BookmarkManager < Sinatra::Base
 
-    before { @links = Link.all } 
+    before { @links = Link.all }
+
+    get '/signup' do
+      erb :signup
+    end
 
     get '/' do
       redirect '/links'
