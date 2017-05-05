@@ -19,6 +19,12 @@ require_relative "data_mapper_setup"
       redirect '/links'
     end
 
+    helpers do
+      def current_user
+        User.get(session[:user_id])
+      end
+    end
+
     get '/links' do
       @link = Link.all
       @user = User.first(id: session[:user_id])
