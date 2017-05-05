@@ -14,12 +14,14 @@ require_relative "data_mapper_setup"
     end
 
     post '/create-user' do
-      session[:user] = User.create(email: params[:email], password: params[:password])
+      user = User.create(email: params[:email], password: params[:password])
+      session[:user_id] = user.id
       redirect '/links'
     end
 
     get '/links' do
       @link = Link.all
+      @user = User.first(id: session[:user_id])
       erb :links
     end
 
