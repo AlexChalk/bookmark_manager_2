@@ -13,3 +13,12 @@ def add_link_with_bubbles_tag
     fill_in 'page_tag', with: 'bubbles'
     click_on 'Create new link'
 end
+
+def sign_up
+  visit '/signup'
+  fill_in :email, with: 'test@example.com'
+  fill_in :password, with: 'password'
+  click_button 'Sign Up'
+end
+
+
