@@ -1,4 +1,4 @@
-<h1><%= "Welcome, #{@user.email}." if @user %></h1>
+<h1><%= "Welcome, #{current_user.email}." if @user %></h1>
 <h1> Links </h1>
 <ul id='links'>
   <% @link.each do |link| %>
