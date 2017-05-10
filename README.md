@@ -14,7 +14,7 @@ Just visit the app [here](https://obscure-lowlands-85366.herokuapp.com/links).
 
 * View links: `/links`.
 * Create new links: `/links/new`. Multiple tags should be comma-separated, 'just, like, this'.
-* Filter links by their tags: `/tags/:name-of-tag`.
+* Filter links by their tags: `/tags/name-of-tag`.
 * Sign up: `/signup` (again, there is no reason to do this and your password will not be encrypted).
 
 ### Option 2: Deploy locally
