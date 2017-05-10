@@ -1,12 +1,11 @@
 # Bookmark Manager
 
-A very simple implementation of a bookmark manager. You can create/save links, and filter links by their tags. You can also sign up at `/signup`, but signing up is the only user functionality that exists, and your password will not be encrypted (so please don't use a proper password).
+A simple implementation of a bookmark manager. You can create/save links, and filter links by their tags. You can also sign up at `/signup`, but signing up is the only user functionality that exists, and your password will not be encrypted (so please don't use a proper password).
 
 ## Installation
 
 1. Clone the repository: `git clone git@github.com:adc17/bookmark_manager_2.git`
-
-2. Install gems: `cd path/to/dir` then `bundle install`. If `bundler` isn't installed, first run `gem install bundler`.
+2. Install gems: `cd path/to/dir` then `bundle install`.
 
 ## Usage
 
@@ -15,8 +14,8 @@ Just visit the app [here](https://obscure-lowlands-85366.herokuapp.com/links).
 
 * View links: `/links`.
 * Create new links: `/links/new`. Multiple tags should be comma-separated, 'just, like, this'.
-* Filter links by their tagsL `/tags/:name-of-tag`.
-* Sign up at `/signup` (again, there is no reason to do this and your password will not be encrypted).
+* Filter links by their tags: `/tags/:name-of-tag`.
+* Sign up: `/signup` (again, there is no reason to do this and your password will not be encrypted).
 
 ### Option 2: Deploy locally
 Ruby Code:
